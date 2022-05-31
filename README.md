@@ -65,6 +65,8 @@ It should also work fine when bundled with other code.  I don't know if it will 
 
 
 ## Changelog:  
+0.1.2:  Documentation updates.  
+0.1.1:  Changed how window export works, now exports .types and .domTypes separately.  
 0.1.0:  Support for different ways of including the library.  Readme updates.  
 0.0.2:  Added functions for all HTML Element types.  Pushed to github.  
 0.0.1:  Initial commit.  

@@ -1,4 +1,4 @@
-
+/* typesUpFront type assertion module  -  v0.1.2  -  David N. Booth*/
 ;(function () {
     //////////   Figure out where/how this code is being used (totally cribbed from lodash)   //////////
 
