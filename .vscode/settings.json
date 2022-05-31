@@ -1,0 +1,36 @@
+{
+    // eslint
+    "eslint.options": {
+        "rules": {
+            "no-console": "off",
+            "no-unused-vars": "off",
+            "no-extra-semi": "off",
+            "eqeqeq": ["error", "always"]
+        }
+    },
+    "eslint.alwaysShowStatus": true,
+    "eslint.lintTask.enable": true,
+    "eslint.probe": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "vue",
+        "markdown"
+    ],
+    
+    // js hint
+    "jshint.options": {
+        "sub": true,
+        "asi": true,
+        "node": true,
+        "browser": true,
+        "esversion": 9,
+        "jquery": true
+    },
+
+    // spell checker
+    "cSpell.words": [
+        "linebreak"
+    ]
+}

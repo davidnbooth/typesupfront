@@ -1,0 +1,11 @@
+{
+  "name": "typesupfront",
+  "version": "0.0.1",
+  "description": "type assertions for JS and dom elements, decorated with jsdoc type definitions, for those who want typing without typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David N. Booth",
+  "license": "ISC"
+}
