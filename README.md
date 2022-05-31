@@ -58,14 +58,14 @@ const {types, domTypes} = require("/path/to/folder/typesUpFront.js")
 
 
 // In html
-<!-- adds typesUpFront as a property of the global Window object -->
+<!-- adds .types and .domTypes as properties of the global Window object -->
 <script src="/path/typesUpFront.js">
 ```
 It should also work fine when bundled with other code.  I don't know if it will work with the ES6 `import` module syntax.
 
 
 ## Changelog:  
-0.0.3:  Support for different ways of including the library.  Readme updates.
+0.1.0:  Support for different ways of including the library.  Readme updates.  
 0.0.2:  Added functions for all HTML Element types.  Pushed to github.  
 0.0.1:  Initial commit.  
 
