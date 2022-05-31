@@ -68,7 +68,7 @@
          * @returns {bigint}
          */
         assertBigInt: function (input) {
-            if (typeof input !== "bigint") throw new Error("Expected bigint value is not a bigint!")
+            if (typeof input !== "bigint") throw new Error("Expected bigint value is not a bigint!")  // jshint ignore:line
             else return input
         },
 
