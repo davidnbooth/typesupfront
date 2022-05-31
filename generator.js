@@ -79,7 +79,7 @@ for (const elemName of htmlElements) {
                   "     * @param {*} el\n" +
                   `     * @returns {${elemName}}\n` +
                   "     */\n" +
-                  `    assert${elemName.split("HTML")[1]} (el) {\n` +
+                  `    assert${elemName.split("HTML")[1]}: function (el) {\n` +
                   `        if (!(el instanceof ${elemName})) throw new Error("Expected ${elemName} is not an ${elemName}")\n` +
                   "        else return el\n" +
                   "    },\n\n"

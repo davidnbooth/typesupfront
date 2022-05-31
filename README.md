@@ -1,4 +1,4 @@
-**Types Up Front**
+# Types Up Front
 
 Javascript is better with types.  Typescript is great, but sometimes it can be a little too much to have to install everything and set up the build process.  
 
@@ -46,3 +46,29 @@ There is also a bit of additional functionality: with input elements we can get 
  2. We mess around with the getters and setters for the .value property of the element, to make them strictly deal with only the correct type.  
 
 Install Types Up Front (TUF) now, put types at the forefront of your front-end code, and next time someone says "hey you should be using Typescript" you can say "well TUF, I don't need it!".
+
+
+## Getting Started:  
+All the code is in `typesUpFront.js` and there are no dependencies.  You can simply import that file if you would like.  The following should all work:
+
+```
+// In some code which is being webpacked/browserified:
+const {types, domTypes} = require("typesUpFront")  
+const {types, domTypes} = require("/path/to/folder/typesUpFront.js")
+
+
+// In html
+<!-- adds typesUpFront as a property of the global Window object -->
+<script src="/path/typesUpFront.js">
+```
+It should also work fine when bundled with other code.  I don't know if it will work with the ES6 `import` module syntax.
+
+
+## Changelog:  
+0.0.3:  Support for different ways of including the library.  Readme updates.
+0.0.2:  Added functions for all HTML Element types.  Pushed to github.  
+0.0.1:  Initial commit.  
+
+
+## Compatibility:  
+Untested but probably very good.  `let`, `const`, and method shorthand syntax have all been avoided, and the assertBigInt function does not actually require the browser to support BigInt.
