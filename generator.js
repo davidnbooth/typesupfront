@@ -71,18 +71,36 @@ const htmlElements = [
 ]
 
 
-let outputText = ""
+/*******************
+ *  domTypes code  *
+ *******************/
+
+let domTypesOutputText = ""
 
 for (const elemName of htmlElements) {
-    outputText += "    /**\n" +
-                  `     * returns input if it is an ${elemName}, otherwise throws\n` +
-                  "     * @param {*} el\n" +
-                  `     * @returns {${elemName}}\n` +
-                  "     */\n" +
-                  `    assert${elemName.split("HTML")[1]}: function (el) {\n` +
-                  `        if (!(el instanceof ${elemName})) throw new Error("Expected ${elemName} is not an ${elemName}")\n` +
-                  "        else return el\n" +
-                  "    },\n\n"
+    domTypesOutputText += "    /**\n" +
+                          `     * returns input if it is an ${elemName}, otherwise throws\n` +
+                          "     * @param {*} el\n" +
+                          `     * @returns {${elemName}}\n` +
+                          "     */\n" +
+                          `    assert${elemName.split("HTML")[1]}: function (el) {\n` +
+                          `        if (!(el instanceof ${elemName})) throw new Error("Expected ${elemName} is not an ${elemName}")\n` +
+                          "        else return el\n" +
+                          "    },\n\n"
 }
 
-fs.writeFileSync("temp.js", outputText)
+fs.writeFileSync("domTypesCode.js", domTypesOutputText)
+
+
+
+/*******************
+ *  domTypes code  *
+ *******************/
+
+ let domTypesTypescriptDefs = ""
+
+ for (const elemName of htmlElements) {
+    domTypesTypescriptDefs += `    assert${elemName.split("HTML")[1]}(el: *): ${elemName};\n`
+ }
+ 
+ fs.writeFileSync("domTypesTypescriptDefs.ts", domTypesTypescriptDefs)
