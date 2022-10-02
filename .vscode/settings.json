@@ -32,6 +32,8 @@
     // spell checker
     "cSpell.words": [
         "browserified",
+        "definitelytyped",
+        "dtslint",
         "linebreak",
         "webpacked"
     ]

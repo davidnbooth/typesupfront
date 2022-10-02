@@ -93,9 +93,9 @@ fs.writeFileSync("domTypesCode.js", domTypesOutputText)
 
 
 
-/*******************
- *  domTypes code  *
- *******************/
+/****************************
+ *  domTypesTypescriptDefs  *
+ ****************************/
 
  let domTypesTypescriptDefs = ""
 
